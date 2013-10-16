@@ -1,11 +1,17 @@
 {
     "name": "brianteachman/tweb",
     "description": "Zend Framework 2 application toolkit.",
-    "license": "GPLv3",
+    "version": "0.1.0",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2"
+    ],
     "authors": [
         {
             "name": "Brian Teachman",
-            "email": "me@briant.me"
+            "email": "me@briant.me",
+            "homepage": "http://www.brianteachman.com/"
         }
     ],
 
@@ -13,5 +19,14 @@
     "require": {
         "php": ">=5.3.0",
         "zendframework/zendframework": "dev-master"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Tweb": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
