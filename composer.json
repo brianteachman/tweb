@@ -1,0 +1,15 @@
+{
+    "name": "brianteachman/tweb",
+    "description": "Zend Framework 2 application toolkit.",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Brian Teachman",
+            "email": "me@briant.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "zendframework/zendframework": "dev-master",
+    }
+}

@@ -1,0 +1,28 @@
+<?php
+// ./module/TWeb/src/TWeb/View/Helper/AbsoluteUrl.php
+namespace TWeb\View\Helper;
+ 
+use Zend\Http\Request;
+use Zend\View\Helper\AbstractHelper;
+
+/**
+ * Be sure to add getViewHelperConfig to/from TWeb\Module.php
+ * 
+ * In your View script, use as below:
+ *
+ *  The full URL to the current page is: <?php echo $this->absoluteUrl(); ?>
+ */
+class AbsoluteUrl extends AbstractHelper
+{
+    protected $request;
+ 
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+ 
+    public function __invoke()
+    {
+        return $this->request->getUri()->normalize();
+    }
+}
